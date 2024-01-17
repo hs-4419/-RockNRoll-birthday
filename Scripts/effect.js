@@ -224,12 +224,14 @@ $("document").ready(function () {
     
     $(".balloons").css("opacity", "0.9");
     $(".balloons h2").fadeIn(3000);
+    // $(".card").css("visibility", "visible");
     $(this)
       .fadeOut("slow")
       .delay(3000)
       .promise()
       .done(function () {
         $("#story").fadeIn("slow");
+        // $(".card").css("visibility", "visible").fadeIn("slow");
       });
   });
 
