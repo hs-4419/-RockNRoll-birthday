@@ -8,28 +8,36 @@ $("document").ready(function () {
     vw = $(window).width() / 2;
 	console.log('vw: ', vw);
     $("#b1,#b2,#b3,#b4,#b5,#b6,#b7").stop();
-    if(vw >= 350){
-      $("#b11").animate({ top: 240, left: vw - 350 }, 500);
-      $("#b22").animate({ top: 240, left: vw - 250 }, 500);
-      $("#b33").animate({ top: 240, left: vw - 150 }, 500);
-      $("#b44").animate({ top: 240, left: vw - 50 }, 500);
-      $("#b55").animate({ top: 240, left: vw + 50 }, 500);
-      $("#b66").animate({ top: 240, left: vw + 150 }, 500);
-      $("#b77").animate({ top: 240, left: vw + 250 }, 500);
-      $("#b88").animate({ top: 243, left: vw - 350 + 5, rotate:349}, 500);
-    }
+
+    $("#b11").animate({ top: 240, left: vw - 350 }, 500);
+    $("#b22").animate({ top: 240, left: vw - 250 }, 500);
+    $("#b33").animate({ top: 240, left: vw - 150 }, 500);
+    $("#b44").animate({ top: 240, left: vw - 50 }, 500);
+    $("#b55").animate({ top: 240, left: vw + 50 }, 500);
+    $("#b66").animate({ top: 240, left: vw + 150 }, 500); 
+    $("#b77").animate({ top: 240, left: vw + 250 }, 500);
+    // if(vw >= 350){
+    //   $("#b11").animate({ top: 240, left: vw - 350 }, 500);
+    //   $("#b22").animate({ top: 240, left: vw - 250 }, 500);
+    //   $("#b33").animate({ top: 240, left: vw - 150 }, 500);
+    //   $("#b44").animate({ top: 240, left: vw - 50 }, 500);
+    //   $("#b55").animate({ top: 240, left: vw + 50 }, 500);
+    //   $("#b66").animate({ top: 240, left: vw + 150 }, 500);
+    //   $("#b77").animate({ top: 240, left: vw + 250 }, 500);
+    //   $("#b88").animate({ top: 243, left: vw - 350 + 5, rotate:349}, 500);
+    // }
   
-    else{
-      vw = $(window).width();
-      $("#b11").animate({ top: 240, left: (vw/7)*0 }, 500);
-      $("#b22").animate({ top: 240, left: (vw/7)*1 }, 500);
-      $("#b33").animate({ top: 240, left: (vw/7)*2 }, 500);
-      $("#b44").animate({ top: 240, left: (vw/7)*3 }, 500);
-      $("#b55").animate({ top: 240, left: (vw/7)*4 }, 500);
-      $("#b66").animate({ top: 240, left: (vw/7)*5 }, 500);
-      $("#b77").animate({ top: 240, left: (vw/7)*6 }, 500);
-      $("#b88").animate({top:240, left:(vw/7)*0} + 3, 500);
-    }
+    // else{
+    //   vw = $(window).width();
+    //   $("#b11").animate({ top: 240, left: (vw/7)*0 }, 500);
+    //   $("#b22").animate({ top: 240, left: (vw/7)*1 }, 500);
+    //   $("#b33").animate({ top: 240, left: (vw/7)*2 }, 500);
+    //   $("#b44").animate({ top: 240, left: (vw/7)*3 }, 500);
+    //   $("#b55").animate({ top: 240, left: (vw/7)*4 }, 500);
+    //   $("#b66").animate({ top: 240, left: (vw/7)*5 }, 500);
+    //   $("#b77").animate({ top: 240, left: (vw/7)*6 }, 500);
+    //   $("#b88").animate({top:240, left:(vw/7)*0} + 3, 500);
+    // }
   });
 
   $("#turn_on").click(function () {
@@ -192,26 +200,26 @@ $("document").ready(function () {
 
 	// 350 bcoz vw is being halved initially
 	if(vw >= 350){
-	  $("#b11").animate({ top: 240, left: vw - 350 }, 500);
+	  $("#b11, #b88").animate({ top: 240, left: vw - 350 }, 500);
     $("#b22").animate({ top: 240, left: vw - 250 }, 500);
     $("#b33").animate({ top: 240, left: vw - 150 }, 500);
     $("#b44").animate({ top: 240, left: vw - 50 }, 500);
     $("#b55").animate({ top: 240, left: vw + 50 }, 500);
     $("#b66").animate({ top: 240, left: vw + 150 }, 500);
     $("#b77").animate({ top: 240, left: vw + 250 }, 500);
-    $("#b88").animate({ top: 243, left: vw - 350 + 5, rotate:349}, 500);
+    // $("#b88").animate({ top: 243, left: vw - 350 + 5, rotate:349}, 500);
 	}
 
 	else{
 		vw = $(window).width();
-	  $("#b11").animate({ top: 240, left: (vw/7)*0 }, 500);
+	  $("#b11, #b88").animate({ top: 240, left: (vw/7)*0 }, 500);
     $("#b22").animate({ top: 240, left: (vw/7)*1 }, 500);
     $("#b33").animate({ top: 240, left: (vw/7)*2 }, 500);
     $("#b44").animate({ top: 240, left: (vw/7)*3 }, 500);
     $("#b55").animate({ top: 240, left: (vw/7)*4 }, 500);
     $("#b66").animate({ top: 240, left: (vw/7)*5 }, 500);
     $("#b77").animate({ top: 240, left: (vw/7)*6 }, 500);
-    $("#b88").animate({top:240, left:(vw/7)*0} + 3, 500);
+    // $("#b88").animate({top:240, left:(vw/7)*0} + 3, 500);
 	}
     
     $(".balloons").css("opacity", "0.9");
