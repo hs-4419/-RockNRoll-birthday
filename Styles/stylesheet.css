@@ -16,8 +16,11 @@ body {
 	/* align-items: safe; */
 }
 .peach {
-	background-color: #FFDAB9;
-	
+	 background-color: #FFDAB9;
+	/* background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+	background-size: 400% 400%;
+	animation: gradient 15s ease infinite;
+	height: 100vh; */
 }
 .peach-after {
 	-webkit-animation:peach_alive linear 8s infinite;
@@ -26,6 +29,7 @@ body {
 	-ms-animation:peach_alive linear 8s infinite;
 	animation:peach_alive linear 8s infinite;
 }
+
 
 @-webkit-keyframes peach_alive {
 	0%{
@@ -116,6 +120,34 @@ body {
 	}
 }
 
+#turn_on{
+	animation: wiggle 2s linear infinite;
+}
+
+@keyframes wiggle {
+	0%, 7% {
+	  transform: rotateZ(0);
+	}
+	15% {
+	  transform: rotateZ(-15deg);
+	}
+	20% {
+	  transform: rotateZ(10deg);
+	}
+	25% {
+	  transform: rotateZ(-10deg);
+	}
+	30% {
+	  transform: rotateZ(6deg);
+	}
+	35% {
+	  transform: rotateZ(-4deg);
+	}
+	40%, 100% {
+	  transform: rotateZ(0);
+	}
+  }
+  
 
 .bulb {
 	width: 50px;
