@@ -260,6 +260,8 @@ $("document").ready(function () {
               .promise()
               .done(function () {
                 $(".cake").fadeIn("fast");
+                $(".card").css("visibility", "visible");
+                //$(".scrllbar")
               });
           } else {
             msgLoop(i);

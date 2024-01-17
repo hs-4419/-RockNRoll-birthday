@@ -1125,7 +1125,7 @@ audio {
 	background-size: 100% auto;
 }
 .balloons h2 {
-	/* text-transform: uppercase; */
+	text-transform: uppercase;
 	margin-top: min(20px, 1.3vw);
 	font-family: 'Signika', sans-serif;
 	font-size: 50px;
@@ -1339,6 +1339,65 @@ audio {
 	display: none;
 	font-weight: bold;
 }
+
+
+  .card {
+	visibility: hidden;
+	box-sizing: border-box;
+	position: absolute;
+	background-color: #FFDAB9;
+	  border-radius: 1.5em;
+	  /* max-width: 300px; */
+	width: 65%;
+	  /* padding: 2.6em 3.8em; */
+	  padding :4px;
+	  cursor: pointer;
+	top: 134%;
+	transform: translate(-50%, -50%);
+	left: 40%;
+	  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.1), 
+		  0 8px 8px rgba(0, 0, 0, 0.1),
+		  0 16px 16px rgba(0, 0, 0, 0.1), 
+		  0 32px 32px rgba(0, 0, 0, 0.15),
+		  0 64px 64px rgba(0, 0, 0, 0.15);
+  }
+  
+  .card h1 {
+	font-weight: normal;font-family: "Montserrat", Arial;
+	text-align: left;
+	font-size: 2em;
+  }
+  
+  
+  /* Scroller styling */
+  .scroller {
+	height: 1.2em;
+	line-height: 1.2em;
+	position: relative;
+	overflow: hidden;
+	/* width: 10em; */
+  }
+  .scroller > span {
+	position: absolute;
+	top: 0;
+	animation: slide 5s infinite;
+	font-weight: bold;
+	
+  }
+  @keyframes slide {
+	0% {
+	  top: 0;
+	}
+	25% {
+	  top: -1.2em;
+	}
+	50% {
+	  top: -2.4em;
+	}
+	75% {
+	  top: -3.6em;
+	}
+  }
 
 .btn-primary {
         border-color: #466baf;
