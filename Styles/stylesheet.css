@@ -118,7 +118,7 @@ body {
   }
 }
 
-#turn_on {
+#turn_on, #play,#bannar_coming, #balloons_flying, #cake_fadein, #light_candle, #wish_message, #story {
   animation: wiggle 2s linear infinite;
 }
 
